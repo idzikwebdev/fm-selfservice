@@ -1,12 +1,18 @@
-genericPipeline {
-    checkoutAdditionalCommand = {
+node {
+    stage ('Checkout') {
     }
-    buildCommand = {
+    stage ('Build') {
     }
-    unitTestCommand = {
+    stage ('Unit Test') {
     }
-    sonarQubeScanCommand = {
+    stage ('Build Docker') {
     }
-    uploadArtifactCommand = {
+    stage ('Static Scan') {
     }
+    stage ('Quality Gate') {
+    }
+    stage ('Upload Docker') {
+    }
+    stage ('Upload Artifact') {
+     }
 }
