@@ -14,7 +14,7 @@ node {
     '''
     }
     stage ('Unit Test') {
-    sh ''
+    sh '''
     ./gradlew test
     '''
     }
